@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <!-- <div class="row"> -->
+    <article>
+      <header style="background: #f7f7f7">
+        <nav class="navbar navbar-expand-sm navbar-light p-2">
+          <img style="width: 100px" src="/img/logo tft png.png" />
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#mynav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynav">
+            <ul class="navbar-nav ml-auto" id="ul-items">
+              <li class="nav-item">
+                <button type="button" class="btn btn-primary">Create</button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="container-fluid mt-3">
+        <div class="row mb-3">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="row justify-content-start pl-2 mt-2">
+              <h5>Today, September 13 stats</h5>
+              <button type="button" class="badge bg-secondary ml-2 mb-1">
+                data in UTC
+              </button>
+            </div>
+            <!-- <h6>Example heading <span class="badge bg-secondary">New</span></h6> -->
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="row justify-content-end pr-2">
+              <h6 style="margin-top: 10px">Sep 13, 2019 - Sep 13, 2019</h6>
+              <button type="button" class="btn" style="margin-left: 20px">
+                <i class="fas fa-calendar-alt"></i>
+              </button>
+              <button type="button" class="btn" style="margin-left: 10px">
+                Exports
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="container-fluid date">
+      <div class="boxes">
+        <div class="box" id="orange">
+          <!-- <img src="image/Business Idea_img.png" alt="" /> -->
+      <!-- <div id="first-box-first-text"><h4><span id="first1">0</span> <span id="text-set1-1">Total Clicks</span></h4></div>
+          <div id="first-box-second-text" ><h4><span id="first2">0</span> <span id="text-set1-2">Floinks Created</span></h4></div> -->
+      <!-- <p>Duis aute irure dolor in volup- tate velit esse dolor</p> -->
+      <!-- </div>
+        <div class="box" id="green">
+     <img src="image/content strategy.png" alt="" /> -->
+      <!-- <div id="Second-box-first-text"><h4><span id="second1">0</span> <span id="text-set2-1">Total Campaigns</span></h4></div>
+          <div id="Second-box-second-text" ><h4><span id="second2">0</span> <span id="text-set2-2">Total Channels</span></h4></div>
+        </div>
+        <div class="box" id="blue">
+           <img src="image/Visual interface.png" alt="" /> -->
+      <!-- <div id="third-box-first-text"><h5> <span id="text-set3-1">Add a Flo.ink Network Domain</span></h5>
+          <h6>Learn about who' sharing your content</h6>
+          </div>
+          <div id="third-box-second-text" >
+            <button style="background-color: transparent; color:aliceblue; border-color: aliceblue;">Upgrade To Enterprise</button>
+            <span>Coming Soon</span>
+        </div> -->
+      <div class="container-fluid">
+        <div class="container-fluid">
+          <div class="row" style="color: white">
+            <div class="col-sm-12 col-md-6 col-lg-4 pb-3">
+              <div
+                class="card"
+                style="min-height: 200px; background-color: orangered"
+              >
+                <div class="card-body d-flex align-items-center">
+                  <div class="row ml-1 flex-fill">
+                    <div class="col-6 col-sm-7">
+                      <div class="d-flex justify-content">
+                        <div><h3 style="font-size: 32px">0</h3></div>
+                        <div class="mt-2 ml-2">Total Click</div>
+                      </div>
+                      <div>
+                        <hr id="line-between" />
+                      </div>
+                      <div>
+                        <div class="d-flex justify-content">
+                          <div><h3 style="font-size: 32px">0</h3></div>
+                          <div class="mt-2 ml-2">Total Click</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-5 col-6">
+                      <div class="d-flex justify-content-center">
+                        <i
+                          class="fa-solid fa-link mt-4"
+                          style="font-size: 70px"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 pb-3">
+              <div
+                class="card"
+                style="min-height: 200px; background-color: #30cc3b"
+              >
+                <div class="card-body d-flex align-items-center">
+                  <div class="row flex-fill">
+                    <div class="col-6 col-sm-7">
+                      <div class="d-flex justify-content">
+                        <div><h3 style="font-size: 32px">0</h3></div>
+                        <div class="mt-2 ml-1">Total Compaigns</div>
+                      </div>
+                      <div style="background-color: white; color: white">
+                        <hr />
+                      </div>
+                      <div>
+                        <div class="d-flex justify-content">
+                          <div><h3 style="font-size: 32px">0</h3></div>
+                          <div class="mt-2 ml-2">Total Channels</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-5">
+                      <div class="d-flex justify-content-center">
+                        <i
+                          class="fab fa-chromecast"
+                          style="font-size: 120px"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 pb-3">
+              <div
+                class="card"
+                style="min-height: 200px; background-color: #0863b4"
+              >
+                <div class="card-body d-flex align-items-center">
+                  <div class="row flex-fill">
+                    <div class="col-6 col-sm-7">
+                      <div class="d-flex justify-content">
+                        <div class="ml-1">
+                          <h6>Add a Flo.inks Network Domain</h6>
+                          <h6 style="font-size: 12px">
+                            Learn about who's sharing your content
+                          </h6>
+                        </div>
+                      </div>
+                      <div>
+                        <hr id="line-between" />
+                      </div>
+                      <div>
+                        <div class="d-flex justify-content">
+                          <!-- <div><h3 style="font-size: 32px">0</h3></div> -->
+                          <button
+                            type="button"
+                            class="btn"
+                            id="third-card-button"
+                          >
+                            Update To Enterprise
+                          </button>
+                          <div class="ml-1 pt-1" style="font-size: 12px">
+                            Coming Soon
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-5">
+                      <div class="d-flex justify-content-center">
+                        <i class="fas fa-wifi" style="font-size: 90px"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row" id="my-row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 border">
+              <div class="row pb-3">
+                <div class="col-6 col-sm-6 col-md-8">
+                  <h3 class="mb-3">Top Floinks</h3>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 pt-1" id="right-all">
+                  <a id="View-all" href="www.tfttainings.com">View All</a>
+                </div>
+              </div>
+              <div class="row pb-3">
+                <div class="col-8 col-sm-6 col-md-8">
+                  <h4>Font Awesome</h4>
+                  <h6 class="mb-3">www.tftTrainings.com/Front-end</h6>
+                  <a href="www.tfttainings.com">www.tftTrainings.com</a>
+                </div>
+                <div class="col-4 col-sm-6 col-md-4 pt-1" id="right-all">
+                  <!-- <a id="View-all" href="www.tfttainings.com">View All</a> -->
+                  <h6 class="mb-5" style="font-size: 14px">Sep 13, 12:11 PM</h6>
+                  <div>
+                    <a id="first-icon" class="mr-2"
+                      ><i class="fas fa-copy"></i>
+                    </a>
+                    <a id="second-icon" class="mr-2"
+                      ><i class="fas fa-share"></i>
+                    </a>
+                    <a id="third-icon" class="mr-2"
+                      ><i class="fas fa-edit"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-12">
+                  <hr />
+                </div>
+              </div>
+              <div class="row pb-3">
+                <div class="col-8 col-sm-6 col-md-8">
+                  <h4>Font Awesome</h4>
+                  <h6 class="mb-3">www.tftTrainings.com/Front-end</h6>
+                  <a href="www.tfttainings.com">www.tftTrainings.com</a>
+                </div>
+                <div class="col-4 col-sm-6 col-md-4 pt-1" id="right-all">
+                  <!-- <a id="View-all" href="www.tfttainings.com">View All</a> -->
+                  <h6 class="mb-5" style="font-size: 14px">Sep 13, 12:11 PM</h6>
+                  <div>
+                    <a id="first-icon" class="mr-2"
+                      ><i class="fas fa-copy"></i>
+                    </a>
+                    <a id="second-icon" class="mr-2"
+                      ><i class="fas fa-share"></i>
+                    </a>
+                    <a id="third-icon" class="mr-2"
+                      ><i class="fas fa-edit"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <hr />
+                </div>
+              </div>
+
+              <div class="row pb-3">
+                <div class="col-8 col-sm-6 col-md-8">
+                  <h4>Font Awesome</h4>
+                  <h6 class="mb-3">www.tftTrainings.com/Front-end</h6>
+                  <a href="www.tfttainings.com">www.tftTrainings.com</a>
+                </div>
+                <div class="col-4 col-sm-6 col-md-4 pt-1" id="right-all">
+                  <!-- <a id="View-all" href="www.tfttainings.com">View All</a> -->
+                  <h6 class="mb-5" style="font-size: 14px">Sep 13, 12:11 PM</h6>
+                  <div>
+                    <a id="first-icon" class="mr-2"
+                      ><i class="fas fa-copy"></i>
+                    </a>
+                    <a id="second-icon" class="mr-2"
+                      ><i class="fas fa-share"></i>
+                    </a>
+                    <a id="third-icon" class="mr-2"
+                      ><i class="fas fa-edit"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 border">
+              <div class="row pb-3">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                  <h5 class="mt-2">Organic Share Top Content</h5>
+                </div>
+                <div
+                  class="col-12 col-sm-12 col-md-6 col-lg-6 pt-1 d-flex justify-content-end"
+                >
+                  <a
+                    style="
+                      font-size: 12px;
+                      color: gray;
+                      padding-right: 1rem;
+                      padding-top: 0.5rem;
+                    "
+                    >Coming Soon</a
+                  >
+                  <button
+                    class="btn btn-danger"
+                    style="
+                      background-color: orangered;
+                      height: fit-content;
+                      width: fit-content;
+                    "
+                    type="button"
+                  >
+                    Upgrade To Interprise
+                  </button>
+                </div>
+              </div>
+
+              <div class="row pb-3">
+                <div class="col-12 wifi-text">
+                  <i class="fas fa-solid fa-wifi" id="wifi-icon"></i>
+                </div>
+              </div>
+
+              <div class="row pb-3">
+                <div class="col-12 wifi-text">
+                  <!-- <i class="fas fa-solid fa-wifi" id="wifi-icon"></i> -->
+                  <h4>Add a Flo.ink Network Domain</h4>
+                  <h6>Learn About Who's Sharing Your Content</h6>
+                  <h6 class="mt-4" style="color: orangered">Learn more</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- </div>> -->
+    <!-- Content -->
+  </body>
+</html>
